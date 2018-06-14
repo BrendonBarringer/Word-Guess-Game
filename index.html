@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+<!-- will play video in background if I find one that I like
+<video autoplay muted loop id="myVideo">
+  <source src="" type="video/mp4">
+</video>
+-->
+<img src="assets/images/background.jpg" id="myBackground">
+<div id=header>
+    <h1>Gaming Title Guessing Game</h1>
+<hr>
+    <p>Press any letter key to get started!</p>
+</div>
+<div class="container">
+    <div class="column">
+        <p>Wins: <span id=yourWins></span></p>
+        <p>Loses: <span id=yourLoses></span></p>
+        <p>Number of Guesses Remaining: <span id=yourLives>12</span></p>
+        <p>Letters already guessed: <span id=yourGuesses></span></p>
+    </div>
+<br>
+    <div class="column">
+        <h2>Current Word</h2>
+        <p><span id=currentWord></span></p>
+        <p> All words will be Titles of Games, Use the image and the audio as hints!</p>
+        <p><span id="lastWord"></span></p>
+    </div> 
+    <div>
+        <img id="logo" alt="Game logo will go here">
+        
+    </div>
+    <p id='hint'></p>
+</div>
+<!-- javascript -->
+<script type="text/javascript" src='assets/javascript/game.js'></script>
+</body>
+</html>
